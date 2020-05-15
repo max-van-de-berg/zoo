@@ -1,0 +1,25 @@
+﻿<Window x:Class="Zoo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zoo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="MonkeyButton" Content="Monkey" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="26,82,0,0" Click="MonkeyButton_Click"/>
+        <Button x:Name="ElephantButton" Content="Elephant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="106,82,0,0" Click="ElephantButton_Click"/>
+        <Button x:Name="LionButton" Content="Lion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="26,107,0,0" Click="LionButton_Click"/>
+        <TextBlock x:Name="AddAnimalBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Add animal" VerticalAlignment="Top" Margin="26,24,0,0" Height="30" Width="162" FontSize="20"/>
+        <TextBox x:Name="nickNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Enter nickname" VerticalAlignment="Top" Width="120" Margin="26,54,0,0" MouseEnter="ClearField"/>
+        <Grid>
+            <ListView x:Name="AnimalList" Margin="413,25,161,186.5" ></ListView>
+            <TextBlock x:Name="FeedAnimalsBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Feed Animals" VerticalAlignment="Top" Margin="26,136,0,0" Height="30" Width="162" FontSize="20"/>
+            <Button x:Name="FeedAllButton" Content="All" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="66,166,0,0" Click="FeedAll"/>
+            <Button x:Name="FeedLionButton" Content="Lion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="26,216,0,0" Click="FeedLion_Click"/>
+            <Button x:Name="FeedElephantButton" Content="Elephant" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="106,191,0,0" Click="FeedElephant_Click"/>
+            <Button x:Name="FeedMonkeyButton" Content="Monkey" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="26,191,0,0" Click="FeedMonkeyButton_Click"/>
+            <Button x:Name="UseEnergy" Content="use energy" HorizontalAlignment="Left" Margin="635,25,0,0" VerticalAlignment="Top" Width="76" Height="201" Click="UseEnergy_Click"/>
+        </Grid>
+    </Grid>
+</Window>
